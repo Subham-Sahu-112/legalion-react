@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <link rel="stylesheet" href="Service.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">
+          <img
+            src="Images/logo.png"
+            alt="Legalion"
+            class="logo-img"
+          />
+        </a>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="index.html#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="service.html" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#contact" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#contact" class="nav-link cta-btn">Get Started</a>
+          </li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Service -->
+    <div class="services">
+      <div class="service-container">
+        <div class="service-head">
+          <h1>Services We Provide</h1>
+        </div>
+        <div class="all-services">
+          <a href="legal.html">
+            <div class="service legal" id="legal">
+              <img style="height: 200px" src="Images/Lawist.jpg" alt="Law" />
+              <h1>LEGAL SERVICE</h1>
+              <p>
+                We provide trusted legal services tailored to individuals,
+                families, and businesses. Our experienced attorneys are
+                committed to protecting your rights and achieving the best
+                possible outcome.
+              </p>
+            </div>
+          </a>
+          <a href="it.html">
+            <div class="service it" id="IT">
+              <img
+                style="height: 200px"
+                src="Images/Information-Technology.jpg"
+                alt="Law"
+              />
+              <h1>IT SERVICE</h1>
+              <p>
+                We deliver smart, secure, and scalable IT solutions to help
+                businesses operate efficiently and stay ahead in the digital
+                age. From support to strategy, we’ve got your tech covered.
+              </p>
+            </div>
+          </a>
+          <a href="business.html">
+            <div class="service dm" id="DM">
+              <img style="height: 200px" src="Images/digital.jpg" alt="Law" />
+              <h1>BUSINESS BRANDING</h1>
+              <p>
+                We help businesses build powerful, memorable brands that connect
+                with their audience. From logo design to brand strategy, we
+                bring your vision to life.
+              </p>
+            </div>
+          </a>
+          <a href="consulting.html">
+            <div class="service dm" id="DM">
+              <img
+                style="height: 200px"
+                src="Images/business-consulting.jpg"
+                alt="Law"
+              />
+              <h1>CONSULTING</h1>
+              <p>
+                We provide expert consulting services to help businesses solve
+                problems, improve performance, and achieve sustainable growth.
+                Strategic advice tailored to your goals.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
