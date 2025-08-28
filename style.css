@@ -3028,6 +3028,14 @@ section {
     min-height: 70vh;
   }
 
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-title {
+    width: 100%;
+  }
+
   .section-header {
     margin-bottom: var(--space-xl);
   }
@@ -3043,14 +3051,28 @@ section {
     padding: var(--space-xs) var(--space-sm);
   }
 
+  .about-partition {
+    gap: 0;
+  }
+
   .industries-section,
   .why-choose-section,
   .map-section {
     padding: var(--space-xl) 0;
   }
 
+  .why-choose-section {
+    margin-top: 0;
+  }
+
   .video-container {
     height: 250px;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -3204,13 +3226,31 @@ section {
   }
 
   .hero-container {
+    padding-top: 3rem;
+    padding-bottom: 7rem;
     gap: var(--space-xl);
     text-align: center;
   }
 
+  .hero-badge {
+    margin: 0;
+    margin-top: 1rem;
+    align-self: center;
+  }
+
   .hero-title {
-    font-size: 2rem;
+    font-size: 1.7rem;
     line-height: 1.2;
+    margin-top: 1rem;
+  }
+
+  .hero-stats {
+    margin: 0;
+  }
+
+  .hero-description {
+    width: 100%;
+    font-size: 1rem;
   }
 
   .hero-subtitle {
@@ -3232,7 +3272,6 @@ section {
   .hero-stats {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-sm);
-    margin-top: var(--space-xl);
   }
 
   .stat-item {
@@ -3600,12 +3639,6 @@ section {
     min-height: 60vh;
   }
 
-  .hero-title {
-    font-size: 1.8rem;
-    line-height: 1.1;
-    margin-bottom: var(--space-md);
-  }
-
   .hero-subtitle {
     font-size: 0.9rem;
     line-height: 1.4;
@@ -3623,9 +3656,8 @@ section {
   }
 
   .hero-stats {
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-xs);
-    margin-top: var(--space-md);
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
   }
 
   .stat-item {
@@ -3877,27 +3909,36 @@ section {
     padding: var(--space-xl) 0 var(--space-md);
   }
 
+  .footer-brand {
+    gap: 0;
+  }
+
   .footer-logo {
     padding: var(--space-sm);
     border-radius: 12px;
     flex-direction: column;
     text-align: center;
     gap: var(--space-sm);
+    margin-bottom: 0;
   }
 
   .footer-logo img {
-    width: 40px;
-    height: 40px;
+    width: 200px;
+    height: 100px;
   }
 
   .footer-logo span {
+    display: none;
     font-size: 1.2rem;
   }
 
   .footer-description {
+    width: 80%;
     font-size: 0.85rem;
+    align-self: center;
     line-height: 1.4;
-    margin: var(--space-md) 0;
+    margin: -0.5rem;
+    margin-bottom: 1rem;
   }
 
   .social-links {

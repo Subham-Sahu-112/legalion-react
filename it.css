@@ -15,7 +15,6 @@ body {
 /* IT Service */
 .IT-service {
   width: 100%;
-  /* height: 100%; */
   background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 50%, rgba(240, 147, 251, 0.1) 100%);
   display: flex;
   flex-direction: column;
@@ -67,7 +66,6 @@ body {
   text-align: start;
 }
 .it-container ul {
-  
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -111,6 +109,9 @@ body {
 }
 
 @media (max-width: 480px) {
+  .IT-service {
+    padding-top: 5rem;
+  }
   .head-container img {
     margin-top: 770px;
   }
