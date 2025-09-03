@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./navbar.css";
+import "./Navbar.css";
 
 export default function Navbar() {
   const [showHamburg, setShowHamburg] = useState(window.innerWidth < 768);
