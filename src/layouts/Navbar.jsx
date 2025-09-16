@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from "../../public/Images/logo.png";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -36,8 +37,8 @@ export default function Navbar() {
   return (
     <nav className="navbar" id="navbar">
       <div className="nav-container">
-        <Link to="#home" className="nav-logo">
-          <img src="Images/logo.png" alt="Legalion" className="logo-img" />
+        <Link to="/#home" className="nav-logo">
+          <img src={Logo} alt="Legalion" className="logo-img" />
         </Link>
 
         {/* Always show hamburger on mobile, always show menu on desktop */}
@@ -57,12 +58,12 @@ export default function Navbar() {
           id="nav-menu"
         >
             <li className="nav-item">
-              <Link to="#home" className="nav-link" onClick={handleLinkClick}>
+              <Link to="/#home" className="nav-link" onClick={handleLinkClick}>
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="service.html" className="nav-link" onClick={handleLinkClick}>
+              <Link to="/services" className="nav-link" onClick={handleLinkClick}>
                 Services
               </Link>
             </li>
