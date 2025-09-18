@@ -461,6 +461,10 @@
     padding: var(--space-md) var(--space-sm);
   }
 
+  .business-service-head{ 
+    margin: 0;
+  }
+
   .business-service-head h1 {
     font-size: 1.8rem;
     letter-spacing: -0.5px;

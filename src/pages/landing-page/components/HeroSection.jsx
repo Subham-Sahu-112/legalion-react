@@ -1,9 +1,28 @@
+import { useState } from "react";
 import "./HeroSection.css";
 
 export default function HeroSection() {
+  const [isMobile] = useState(window.innerWidth <= 768);
   return (
-    <section id="home" className="hero">
+    <section
+      id="home"
+      className="hero"
+      style={{ padding: "0", paddingTop: "100px" }}
+    >
       <div className="hero-container">
+        <div className="hero-video">
+          <video
+            src={
+              isMobile
+                ? "https://ik.imagekit.io/wiqxywfta/Legalion.mp4?updatedAt=1758198657909"
+                : "https://ik.imagekit.io/wiqxywfta/Hero-section.mp4?updatedAt=1758096425577"
+            }
+            autoPlay
+            muted
+            loop
+            playsInline
+          ></video>
+        </div>
         <div className="hero-content">
           <div className="hero-badge">
             <i className="fas fa-star"></i>
@@ -11,7 +30,8 @@ export default function HeroSection() {
           </div>
 
           <h1 className="hero-title">
-            Partnering success with our &nbsp;<br />
+            Partnering success with our &nbsp;
+            <br />
             <span className="gradient-text">
               AI enabled Legal Tech Process and Tool
             </span>

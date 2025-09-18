@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../public/Images/logo.png";
+import Logo from "/Images/logo.png";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -68,22 +68,17 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="#about" className="nav-link" onClick={handleLinkClick}>
+              <Link to="/about" className="nav-link" onClick={handleLinkClick}>
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="#team" className="nav-link" onClick={handleLinkClick}>
-                Team
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="#contact" className="nav-link" onClick={handleLinkClick}>
+              <Link to="/contact" className="nav-link" onClick={handleLinkClick}>
                 Contact
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="#contact" className="nav-link cta-btn" onClick={handleLinkClick}>
+              <Link to="/contact" className="nav-link cta-btn" onClick={handleLinkClick}>
                 Get Started
               </Link>
             </li>

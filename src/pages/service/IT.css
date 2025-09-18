@@ -457,6 +457,11 @@
     letter-spacing: -0.5px;
   }
 
+  .it-services-grid {
+    flex-direction: column;
+    gap: 10px;
+  }
+
   .it-service {
     padding: var(--space-lg);
   }
@@ -490,6 +495,7 @@
   }
 
   .it-service-item {
+    width: 100%;
     padding: var(--space-md);
     text-align: center;
   }
@@ -509,8 +515,12 @@
   }
 
   .it-service-image {
-    max-width: 300px;
-    min-height: 200px;
+    width: 300px;
+    height: auto;
+  }
+
+  .it-intro {
+    width: 100%;
   }
 
   .it-intro,

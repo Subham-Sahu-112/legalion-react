@@ -198,8 +198,8 @@ const Legal = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="service-info-video">
-                      <div className="legal-video vid-1">
+                    <div className="service-info-video vid-1">
+                      <div className="legal-video">
                         <iframe
                           width="90%"
                           height="95%"
@@ -295,8 +295,8 @@ const Legal = () => {
                       </div>
                     </div>
 
-                    <div className="service-info-video">
-                      <div className="legal-video vid-2">
+                    <div className="service-info-video vid-2">
+                      <div className="legal-video">
                         <iframe
                           width="90%"
                           height="95%"
@@ -410,8 +410,8 @@ const Legal = () => {
                       </div>
                     </div>
 
-                    <div className="service-info-video">
-                      <div className="legal-video vid-3">
+                    <div className="service-info-video vid-3">
+                      <div className="legal-video">
                         <iframe
                           width="90%"
                           height="95%"

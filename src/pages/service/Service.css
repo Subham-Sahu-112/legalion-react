@@ -306,6 +306,7 @@
   }
 
   .service {
+    height: 100%;
     min-height: 320px;
     padding: var(--space-md);
     gap: var(--space-md);
