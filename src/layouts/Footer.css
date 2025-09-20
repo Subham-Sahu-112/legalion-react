@@ -108,19 +108,19 @@ section {
 .footer-brand {
   display: flex;
   flex-direction: column;
-  gap: var(--space-lg);
+  gap: 0.5rem;
 }
 
 .footer-logo {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 12px;
-  margin-bottom: 20px;
 }
 
 .footer-logo img {
-  width: 60px;
-  height: 60px;
+  width: 200px;
+  height: auto;
   border-radius: 12px;
 }
 
@@ -131,13 +131,16 @@ section {
 }
 
 .footer-description {
+  text-align: center;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
   max-width: 400px;
+  margin-bottom: 0.5rem;
 }
 
 .social-links {
   display: flex;
+  justify-content: center;
   gap: var(--space-md);
 }
 

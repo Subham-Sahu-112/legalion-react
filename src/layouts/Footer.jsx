@@ -8,7 +8,6 @@ export default function Footer() {
           <div className="footer-brand">
             <div className="footer-logo">
               <img src="Images/logo.png" alt="Legalion" />
-              <span data-text="LEGALION">LEGALION</span>
             </div>
             <p className="footer-description">
               Where Law Meets Technology, and Businesses Move Forward with
