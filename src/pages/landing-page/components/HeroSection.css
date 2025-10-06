@@ -45,6 +45,7 @@
   align-items: center;
   position: absolute;
   top: 13%;
+  margin-top: 2rem;
   animation: slideInLeft 1s ease-out;
 }
 
@@ -54,12 +55,14 @@
   align-self: flex-start;
   gap: var(--space-xs);
   padding: 0.5rem 1rem;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.3);
   border-radius: var(--radius-xl);
-  color: var(--primary-color);
+  color: black;
   font-weight: 600;
   font-size: 0.9rem;
-  margin: 0 auto;
+  margin: 0;
+  margin-top: 2rem;
+  margin-left: -17rem;
   box-shadow: var(--shadow-md);
   backdrop-filter: blur(10px);
 }
@@ -84,35 +87,40 @@
   /* max-width: 600px; */
 }
 
+.gradient-text {
+  color: white !important;
+}
+
 .hero-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-md);
+  margin-top: 5rem;
 }
 
-.stat-item {
+.hero-stat-item {
   text-align: center;
   padding: var(--space-md);
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.0);
   border-radius: var(--radius-lg);
   backdrop-filter: blur(10px);
   transition: transform var(--transition-normal);
 }
 
-.stat-item:hover {
+.hero-stat-item:hover {
   transform: translateY(-5px);
 }
 
-.stat-number {
+.hero-stat-number {
   font-size: 2rem;
   font-weight: 800;
-  color: var(--primary-color);
+  color: white;
   font-family: var(--font-heading);
 }
 
-.stat-label {
+.hero-stat-label {
   font-size: 0.9rem;
-  color: var(--text-secondary);
+  color: white;
   font-weight: 500;
 }
 

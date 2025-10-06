@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "/Images/logo.png";
+import Logo from "/logo-black.png";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -41,12 +41,17 @@ export default function Navbar() {
           <img src={Logo} alt="Legalion" className="logo-img" />
         </Link>
 
+        <div className="hero-badge">
+          <i className="fas fa-star"></i>
+          <span>Where Law Meets Technology</span>
+        </div>
+
         {/* Always show hamburger on mobile, always show menu on desktop */}
         <div
           className={`hamburger ${hamburgeClick ? "active" : ""}`}
           id="hamburger"
           onClick={handleHambClick}
-          style={{ display: showHamburg ? 'flex' : 'none' }}
+          style={{ display: showHamburg ? "flex" : "none" }}
         >
           <span className="bar"></span>
           <span className="bar"></span>
@@ -54,35 +59,41 @@ export default function Navbar() {
         </div>
 
         <ul
-          className={`nav-menu ${showHamburg ? (showNavbar ? "active" : "") : ""}`}
+          className={`nav-menu ${
+            showHamburg ? (showNavbar ? "active" : "") : ""
+          }`}
           id="nav-menu"
         >
-            <li className="nav-item">
-              <Link to="/#home" className="nav-link" onClick={handleLinkClick}>
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/services" className="nav-link" onClick={handleLinkClick}>
-                Services
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/about" className="nav-link" onClick={handleLinkClick}>
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/contact" className="nav-link" onClick={handleLinkClick}>
-                Contact
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/contact" className="nav-link cta-btn" onClick={handleLinkClick}>
-                Get Started
-              </Link>
-            </li>
-          </ul>
+          <li className="nav-item">
+            <Link to="/#home" className="nav-link" onClick={handleLinkClick}>
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/services" className="nav-link" onClick={handleLinkClick}>
+              Services
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/about" className="nav-link" onClick={handleLinkClick}>
+              About
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/contact" className="nav-link" onClick={handleLinkClick}>
+              Contact
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/contact"
+              className="nav-link cta-btn"
+              onClick={handleLinkClick}
+            >
+              Get Started
+            </Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );

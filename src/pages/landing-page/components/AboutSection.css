@@ -7,17 +7,37 @@ section {
   margin-bottom: var(--space-4xl);
 }
 
-.section-badge {
+.btn-switch {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--space-lg);
+}
+
+.abt-section-badge {
   display: inline-flex;
   align-items: center;
   gap: var(--space-xs);
-  padding: var(--space-sm) var(--space-lg);
-  background: var(--gradient-primary);
-  color: var(--white);
+  padding: 10px 20px;
+  background: var(--gray-200);
+  color: var(--text-primary);
+  border: 2px solid transparent;
   border-radius: var(--radius-xl);
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   margin-bottom: var(--space-lg);
+  margin-right: var(--space-md);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.abt-section-badge:hover {
+  background: var(--gray-300);
+  transform: translateY(-2px);
+}
+
+.abt-section-badge.active {
+  background: var(--gradient-primary);
+  color: var(--white);
   box-shadow: var(--shadow-md);
 }
 
@@ -83,7 +103,8 @@ section {
   margin-top: 2rem;
 }
 
-.feature-item {
+.feature-item,
+.abt-feature-item {
   display: flex;
   gap: var(--space-md);
   margin-bottom: var(--space-lg);
@@ -93,13 +114,15 @@ section {
   transition: all var(--transition-normal);
 }
 
-.feature-item:hover {
+.feature-item:hover,
+.abt-feature-item:hover {
   background: var(--white);
   box-shadow: var(--shadow-md);
   transform: translateX(10px);
 }
 
-.feature-icon {
+.feature-icon,
+.abt-feature-icon {
   width: 60px;
   height: 60px;
   background: var(--gradient-primary);
@@ -112,13 +135,15 @@ section {
   flex-shrink: 0;
 }
 
-.feature-content h4 {
+.feature-content h4,
+.abt-feature-content h4 {
   font-size: 1.2rem;
   margin-bottom: var(--space-sm);
   color: var(--text-primary);
 }
 
-.feature-content p {
+.feature-content p,
+.abt-feature-content p {
   color: var(--text-secondary);
   line-height: 1.6;
 }
@@ -607,5 +632,119 @@ section {
   
   .reason-content p {
     font-size: 0.7rem;
+  }
+}
+
+/* Services Grid Styles */
+.abt-services-grid {
+  width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.abt-service-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+  border: 1px solid var(--gray-200);
+  cursor: pointer;
+}
+
+.abt-service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.service-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.abt-service-card:hover .service-card-image {
+  transform: scale(1.05);
+}
+
+.abt-service-card h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-primary);
+  padding: 5px var(--space-lg) 5px;
+  margin: 0;
+}
+
+.abt-service-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  text-align: center;
+  padding: 0 10px 10px;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive for Services Grid */
+@media (max-width: 1199px) {
+  .abt-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+}
+
+@media (max-width: 767px) {
+  .abt-services-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  
+  .service-card-image {
+    height: 180px;
+  }
+  
+  .abt-service-card h4 {
+    font-size: 1.1rem;
+    padding: var(--space-md) var(--space-md) var(--space-xs);
+  }
+  
+  .abt-service-card p {
+    font-size: 0.9rem;
+    padding: 0 var(--space-md) var(--space-md);
+  }
+  
+  .btn-switch {
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+  
+  .abt-section-badge {
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .service-card-image {
+    height: 160px;
+  }
+  
+  .abt-service-card h4 {
+    font-size: 1rem;
+    padding: var(--space-sm) var(--space-sm) 0.25rem;
+  }
+  
+  .abt-service-card p {
+    font-size: 0.85rem;
+    padding: 0 var(--space-sm) var(--space-sm);
+    line-height: 1.5;
+  }
+  
+  .abt-section-badge {
+    font-size: 0.85rem;
+    padding: 6px 12px;
   }
 }

@@ -24,36 +24,31 @@ export default function HeroSection() {
           ></video>
         </div>
         <div className="hero-content">
-          <div className="hero-badge">
-            <i className="fas fa-star"></i>
-            <span>Where Law Meets Technology</span>
-          </div>
-
           <h1 className="hero-title">
             Partnering success with our &nbsp;
             <br />
-            <span className="gradient-text">
-              AI enabled Legal Tech Process and Tool
+            <span style={{ color: "white" }}>
+              AI enabled Process & Tools
             </span>
           </h1>
 
           <p className="hero-description">
-            Enable your business sustenance with our E2E consulting
+            Ensure your business growth with our "End2End" consulting
           </p>
 
           <div className="hero-stats">
-            <div className="stat-item">
-              <div className="stat-number">50+</div>
-              <div className="stat-label">Active Cases</div>
+            <div className="hero-stat-item">
+              <div className="hero-stat-number">500+</div>
+              <div className="hero-stat-label">Successful Cases</div>
             </div>
-            <div className="stat-item">
-              <div className="stat-number">200+</div>
-              <div className="stat-label">Happy Clients</div>
+            <div className="hero-stat-item">
+              <div className="hero-stat-number">200+</div>
+              <div className="hero-stat-label">Happy Clients</div>
             </div>
-            <div className="stat-item">
-              <div className="stat-number">40+</div>
-              <div className="stat-label">
-                Years Integrated Consultant Experience
+            <div className="hero-stat-item">
+              <div className="hero-stat-number">100+</div>
+              <div className="hero-stat-label">
+                Years of Integrated Consultant Experiences
               </div>
             </div>
           </div>
