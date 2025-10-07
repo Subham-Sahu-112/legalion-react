@@ -637,10 +637,12 @@ section {
 
 /* Services Grid Styles */
 .abt-services-grid {
-  width: 1300px;
+  width: 100%;
+  max-width: 1300px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
+  gap: 1.5rem;
+  margin: 0 auto;
 }
 
 .abt-service-card {
@@ -692,6 +694,7 @@ section {
   .abt-services-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-lg);
+    max-width: 900px;
   }
 }
 
@@ -699,10 +702,16 @@ section {
   .abt-services-grid {
     grid-template-columns: 1fr;
     gap: var(--space-md);
+    padding: 0 var(--space-sm);
+  }
+  
+  .abt-service-card {
+    max-width: 100%;
   }
   
   .service-card-image {
-    height: 180px;
+    height: 200px;
+    object-fit: cover;
   }
   
   .abt-service-card h4 {
@@ -713,23 +722,35 @@ section {
   .abt-service-card p {
     font-size: 0.9rem;
     padding: 0 var(--space-md) var(--space-md);
+    line-height: 1.6;
   }
   
   .btn-switch {
     flex-wrap: wrap;
     gap: var(--space-sm);
+    justify-content: center;
   }
   
   .abt-section-badge {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     padding: 8px 16px;
     margin-right: 0;
+    margin-bottom: var(--space-xs);
   }
 }
 
 @media (max-width: 479px) {
+  .abt-services-grid {
+    gap: 1rem;
+    padding: 0;
+  }
+  
+  .abt-service-card {
+    border-radius: var(--radius-md);
+  }
+  
   .service-card-image {
-    height: 160px;
+    height: 180px;
   }
   
   .abt-service-card h4 {
@@ -743,8 +764,16 @@ section {
     line-height: 1.5;
   }
   
+  .btn-switch {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+  
   .abt-section-badge {
     font-size: 0.85rem;
-    padding: 6px 12px;
+    padding: 10px 14px;
+    justify-content: center;
+    width: 100%;
   }
 }

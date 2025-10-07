@@ -421,7 +421,7 @@
   }
   
   .hero-stats {
-    max-width: 280px;
+    display: none;
   }
   
   .stat-number {
