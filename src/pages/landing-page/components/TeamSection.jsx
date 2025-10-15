@@ -1,4 +1,4 @@
-import './TeamSection.css';
+import "./TeamSection.css";
 
 export default function TeamSection() {
   return (
@@ -12,20 +12,18 @@ export default function TeamSection() {
           <h2 className="section-title">Message from Founder</h2>
         </div>
 
-        <div className="team-grid">
-          <div className="team-card">
+        <div className="fou-team-grid">
+          <div className="fou-team-card">
             <div className="hm-team-image">
-                <img src="/Images/founder.jpg" alt="founder" />
+              <img src="/Images/legalion.png" alt="founder" />
             </div>
-            {/* <div className="team-info">
-              <h3 className="team-name">Srittam Das</h3>
-              <p className="team-role">Chief Executive Consultant</p>
-              <p className="team-domain">IT, Finance, Law</p>
-              <div className="team-details">
-                <span className="team-experience">25+ Years Experience</span>
-                <span className="team-credentials">MBA, LLB, CA</span>
-              </div>
-            </div> */}
+            <div className="fou-team-info">
+              <h3 className="fou-team-name">GET TO KNOW US</h3>
+              <p className="fou-team-role">Message from Founder</p>
+              <p className="fou-team-bio">
+                "I am very grateful to legendary advocate Gokulananda Chaudhury (1863-1915) for leaving a compliance footstep to be useful for the people at problem. Having more than 25 years of experience of serving multinational Companies and managing the compliance portfolios, founded this entity to serve the clients. I humbly acknowledge the blessings of my previous generations. The deep values they have instilled continue to inspire us to create a platform that brings out the best versions of our selves collectively, while we seek to serve our clients and further the cause of justice."
+              </p>
+            </div>
           </div>
         </div>
       </div>

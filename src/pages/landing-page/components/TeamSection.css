@@ -50,7 +50,7 @@ section {
   gap: var(--space-lg);
 }
 
-.team-card {
+.fou-team-card {
   background: var(--white);
   border-radius: var(--radius-xl);
   text-align: center;
@@ -64,37 +64,17 @@ section {
   overflow: hidden;
 }
 
-.team-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(102, 126, 234, 0.1),
-    transparent
-  );
-  transition: left 0.6s;
-}
-
-.team-card:hover::before {
-  left: 100%;
-}
-
-.team-card:hover {
+.fou-team-card:hover {
   transform: translateY(-10px);
   box-shadow: var(--shadow-xl);
 }
 
 .hm-team-image {
-  height: 400px;
+  height: 300px;
+  width: 300px !important;
 }
 
 .hm-team-image img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: var(--radius-lg);
@@ -192,7 +172,7 @@ section {
     gap: var(--space-lg);
   }
   
-  .team-card {
+  .fou-team-card {
     padding: var(--space-lg);
   }
   
@@ -245,7 +225,7 @@ section {
     margin: 0 auto;
   }
   
-  .team-card {
+  .fou-team-card {
     padding: var(--space-lg);
   }
   
@@ -296,7 +276,7 @@ section {
     max-width: 350px;
   }
   
-  .team-card {
+  .fou-team-card {
     padding: var(--space-md);
   }
   
@@ -356,12 +336,21 @@ section {
   }
   
   .team-grid {
-    max-width: 300px;
     gap: var(--space-sm);
   }
   
-  .team-card {
+  .fou-team-card {
+    flex-direction: column  ;
     padding: var(--space-sm) var(--space-md);
+  }
+
+  .hm-team-image {
+    width: 100% !important;
+  }
+
+  .fou-team-info {
+    padding: 0;
+    padding-top: 1.5rem;
   }
   
   .team-avatar {
@@ -374,17 +363,21 @@ section {
     margin-bottom: var(--space-sm);
   }
   
-  .team-name {
-    font-size: 0.95rem;
+  .fou-team-name {
+    font-size: 1.3rem;
     margin-bottom: 0.25rem;
   }
   
-  .team-role {
-    font-size: 0.8rem;
+  .fou-team-role {
+    font-size: 1rem;
     margin-bottom: 0.25rem;
   }
+
+  .fou-team-bio {
+    font-size: 0.9rem;
+  }
   
-  .team-domain {
+  .fou-team-domain {
     font-size: 0.75rem;
     margin-bottom: var(--space-xs);
   }
@@ -410,7 +403,7 @@ section {
     max-width: 250px;
   }
   
-  .team-card {
+  .fou-team-card {
     padding: 0.75rem;
   }
   
