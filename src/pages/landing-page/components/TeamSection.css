@@ -57,16 +57,20 @@ section {
   box-shadow: var(--shadow-md);
   transition: all var(--transition-normal);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 1rem 0;
+  padding: 1rem;
   overflow: hidden;
 }
 
 .fou-team-card:hover {
   transform: translateY(-10px);
   box-shadow: var(--shadow-xl);
+}
+
+.fou-team-info {
+  width: 70%;
 }
 
 .hm-team-image {
@@ -95,13 +99,13 @@ section {
   box-shadow: var(--shadow-lg);
 }
 
-.team-name {
-  font-size: 1.3rem;
+.fou-team-name {
+  font-size: 1.5rem;
   margin-bottom: var(--space-xs);
   color: var(--text-primary);
 }
 
-.team-role {
+.fou-team-role {
   color: var(--primary-color);
   font-weight: 600;
   margin-bottom: var(--space-xs);
