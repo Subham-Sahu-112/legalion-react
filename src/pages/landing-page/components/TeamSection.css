@@ -366,6 +366,10 @@ section {
   .team-image {
     margin-bottom: var(--space-sm);
   }
+
+  .fou-team-info {
+    width: 100%;
+  }
   
   .fou-team-name {
     font-size: 1.3rem;
@@ -378,6 +382,7 @@ section {
   }
 
   .fou-team-bio {
+    width: 100%;
     font-size: 0.9rem;
   }
   
