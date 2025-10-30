@@ -39,8 +39,6 @@ section {
   margin: 0 auto;
 }
 
-
-
 .contact {
   background: var(--gray-50);
 }
@@ -49,6 +47,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-3xl);
+  margin-bottom: 2rem;
 }
 
 .contact-description {
@@ -262,7 +261,7 @@ section {
   gap: var(--space-sm);
 }
 
-.btn {
+.con-btn {
   display: inline-flex;
   align-items: center;
   gap: var(--space-xs);
@@ -278,7 +277,7 @@ section {
   overflow: hidden;
 }
 
-.btn::before {
+.con-btn::before {
   content: "";
   position: absolute;
   top: 0;
@@ -294,22 +293,22 @@ section {
   transition: left 0.5s;
 }
 
-.btn:hover::before {
+.con-btn:hover::before {
   left: 100%;
 }
 
-.btn-primary {
+.con-btn-primary {
   background: var(--gradient-primary);
   color: var(--white);
   box-shadow: var(--shadow-lg);
 }
 
-.btn-primary:hover {
+.con-btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-xl);
 }
 
-.btn-full {
+.con-btn-full {
   width: 100%;
   justify-content: center;
 }
@@ -536,7 +535,7 @@ section {
     min-height: 100px;
   }
   
-  .btn {
+  .con-btn {
     padding: 0.8rem 1.5rem;
     font-size: 0.9rem;
   }
@@ -604,7 +603,7 @@ section {
     font-size: 0.85rem;
   }
   
-  .btn {
+  .con-btn {
     padding: 0.7rem 1.2rem;
     font-size: 0.85rem;
   }
@@ -694,7 +693,7 @@ section {
     min-height: 80px;
   }
   
-  .btn {
+  .con-btn {
     padding: 0.6rem 1rem;
     font-size: 0.8rem;
   }
@@ -739,7 +738,7 @@ section {
     font-size: 0.75rem;
   }
   
-  .btn {
+  .con-btn {
     padding: 0.5rem 0.8rem;
     font-size: 0.75rem;
   }

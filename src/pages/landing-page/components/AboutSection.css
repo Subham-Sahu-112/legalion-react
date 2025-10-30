@@ -154,7 +154,7 @@ section {
   margin: 4rem 0;
 }
 
-.section-subtitle {
+.abt-section-subtitle {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-primary);
@@ -398,7 +398,7 @@ section {
     font-size: 0.9rem;
   }
   
-  .section-subtitle {
+  .abt-section-subtitle {
     font-size: 1.3rem;
     margin-bottom: var(--space-lg);
   }
@@ -475,7 +475,7 @@ section {
     font-size: 0.85rem;
   }
   
-  .section-subtitle {
+  .abt-section-subtitle {
     font-size: 1.2rem;
     margin-bottom: var(--space-md);
   }
@@ -564,7 +564,7 @@ section {
     line-height: 1.4;
   }
   
-  .section-subtitle {
+  .abt-section-subtitle {
     font-size: 1.1rem;
     margin-bottom: 1rem;
   }
@@ -622,7 +622,7 @@ section {
     font-size: 0.75rem;
   }
   
-  .section-subtitle {
+  .abt-section-subtitle {
     font-size: 1rem;
   }
   

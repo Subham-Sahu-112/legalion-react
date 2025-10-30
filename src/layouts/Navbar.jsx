@@ -41,7 +41,7 @@ export default function Navbar() {
           <img src={Logo} alt="Legalion" className="logo-img" />
         </Link>
 
-        <div className="hero-badge">
+        <div className="nav-badge">
           <i className="fas fa-star"></i>
           <span>Where Law Meets Technology</span>
         </div>
@@ -72,6 +72,11 @@ export default function Navbar() {
           <li className="nav-item">
             <Link to="/services" className="nav-link" onClick={handleLinkClick}>
               Services
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/team" className="nav-link" onClick={handleLinkClick}>
+              Our Team
             </Link>
           </li>
           <li className="nav-item">

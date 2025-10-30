@@ -216,13 +216,14 @@ ${data.message}
 
               <button 
                 type="submit" 
-                className="btn btn-primary btn-full"
+                className="con-btn con-btn-primary con-btn-full"
                 disabled={isSubmitting}
               >
                 <span>
                   {isSubmitting ? 'Sending...' : 'Send to WhatsApp'}
                 </span>
-                <i className={`fas ${isSubmitting ? 'fa-spinner fa-spin' : 'fa-whatsapp'}`}></i>
+                <i className={`fa-brands ${isSubmitting ? 'fa-spinner fa-spin' : 'fa-whatsapp'}`}></i>
+                {/* <i class="fa-brands fa-whatsapp"></i> */}
               </button>
             </form>
           </div>
