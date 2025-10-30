@@ -72,7 +72,7 @@ export default function TeamPage() {
         <div className="all-team-grid">
           {teamDetails.map((member, idx) => (
             <div key={idx} className="all-team-card">
-              <div className="img-container">
+              <div className="team-img-container">
                 <img src={member.imgUrl} alt="founder" />
               </div>
               <div className="right-container">
